@@ -1,0 +1,43 @@
+th[sortable] {
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+th[sortable].desc:before, th[sortable].asc:before {
+  font-family: FontAwesome; 
+  font-weight: 900; 
+  content: "\f063";
+  display: block;
+  float: left;
+  margin-left: -30px;
+  color: white;
+
+}
+
+th[sortable].desc:before {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+}
+
+/* Filtering table demo */
+ngbd-table-filtering span.ngb-highlight {
+  background-color: yellow;
+}
+
+/* Complete table demo */
+ngbd-table-complete span.ngb-highlight {
+  background-color: yellow;
+}
+
+.inner-addon .fa {
+    margin: 12px 0 0 0 !important;
+}
+
+::ng-deep body:not(.om) .table.text-white {
+    color: #333!important;
+}
+
+::ng-deep body .table-striped tbody tr.rowData.odd {
+    background-color: rgba(255, 255, 255, 0.11);
+}
