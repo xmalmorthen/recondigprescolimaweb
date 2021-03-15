@@ -1,0 +1,156 @@
+body{
+  background-color: whitesmoke;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 14px;
+  /*text-transform: uppercase;*/
+}
+
+body.om{
+  background-color: #1f1f1f;
+  color: #f1eded;
+}
+
+body.om hr {
+  border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.pageHeader {
+  border-bottom: 1px solid;
+  padding-bottom: .5rem;
+  margin-bottom: 1rem;
+}
+
+body.om .pageHeader {
+  border-color: rgb(255 255 255 / 12%);
+}
+
+body:not(.om) .pageHeader {
+  border-color: rgb(0 0 0 / 35%) !important;;
+}
+
+body.om .header {
+  background-color: #1f1f1f;
+  color: #f1eded;
+  
+}
+
+body.om .footer {
+  background-color: #343a40;
+  color: #f1eded;  
+}
+
+body:not(.om) .navbar-dark.bg-dark {
+  background-color: #cacaca !important;
+  color: #333;
+
+}
+
+body:not(.om) .navbar-dark .navbar-brand {
+  color: #333;
+}
+
+body:not(.om) .navbar-dark .navbar-nav .nav-link {
+  color: rgb(0 0 0 / 33%);
+}
+
+body:not(.om) .navbar-dark .navbar-nav .nav-item :hover {
+  color: rgb(0, 47, 255);
+}
+
+body:not(.om) .navbar-dark .navbar-toggler {
+  color: rgb(0 0 0 / 63%);
+  border-color: rgb(0 0 0 / 29%);
+}
+
+body:not(.om) .navbar-dark .navbar-nav .show > .nav-link, 
+body:not(.om) .navbar-dark .navbar-nav .active > .nav-link, 
+body:not(.om) .navbar-dark .navbar-nav .nav-link.show, 
+body:not(.om) .navbar-dark .navbar-nav .nav-link.active {
+  color: black;
+}
+
+body:not(.om) .activeBtn{
+  color: black!important;
+  border-color: black!important;
+}
+
+body:not(.om) svg#digpressBackground g#svgg path{
+  fill-opacity: .2!important;
+}
+
+body:not(.om) .card-body.text-white {
+  color: #333!important;
+}
+
+body:not(.om) .card-body .dropdown-item {
+  color: #333!important;
+}
+
+.extendWorkJob{
+  min-height: calc( 100vh - 160px);
+}
+
+.bg-t {
+  background-color: transparent!important;
+}
+
+:host {
+  color: #333;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+/* style glyph */
+.inner-addon .fa {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align glyph */
+.left-addon .fa  { left:  0px;}
+.right-addon .fa { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+.tableDetailSccionTitle{
+  width: 60%;
+  border-bottom: 1px solid;
+  border-color: rgb(255 255 255 / 16%);
+  margin-bottom: 0.1rem;
+}
+
+body:not(.om) .tableDetailSccionTitle {
+  border-bottom: 1px solid rgb(255 255 255 / 16%);
+  border-color: rgb(0 0 0 / 16%);
+}
+
+.table td, .table th {
+  padding: 3px 0.75rem!important;
+  vertical-align: middle!important;
+}
+
+@media screen and (max-width: 992px) {
+  
+  .card-body {
+    padding: .50rem!important;
+    overflow: auto!important;
+  }
+
+}
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+@import './scroll-bar.scss';
+
+
+

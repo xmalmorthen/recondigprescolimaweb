@@ -1,0 +1,30 @@
+
+body {
+  scrollbar-width: thin;
+  scrollbar-color: rgb(255, 255, 255) rgb(97, 97, 97);;
+}
+
+/* Works on Chrome/Edge/Safari */
+body::-webkit-scrollbar {
+  width: 14px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(97, 97, 97);
+}
+
+body:not(.om)::-webkit-scrollbar-track {
+    background: rgb(58, 58, 58);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  border: 3px solid rgb(97, 97, 97);
+}
+
+body:not(.om)::-webkit-scrollbar-thumb {  
+  border: 3px solid rgb(58, 58, 58);;
+}
+
+
