@@ -1,0 +1,29 @@
+::ng-deep .card {
+    background-color: transparent!important;
+}
+
+::ng-deep .card .card-header {
+    background-color: #ffffff0d;
+}
+
+::ng-deep .card .card-header button {
+    width: 100%;
+    text-align: left;
+}
+
+::ng-deep .btn-link {
+    color: white;
+    text-decoration: none!important;
+}
+
+::ng-deep .btn-link:hover,
+::ng-deep body:not(.om) .btn-link:hover
+ {
+    color: #0056b3;
+    text-decoration: none!important;
+}
+
+::ng-deep body:not(.om) .btn-link {
+    color: #333;
+    text-decoration: none!important;
+}
